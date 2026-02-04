@@ -11,10 +11,10 @@ interface AlertProps {
 
 const Alert: React.FC<AlertProps> = ({ type, message, onClose }) => {
   const typeClasses: Record<AlertType, string> = {
-    success: 'bg-success-50 text-success-700 border-success-500',
-    error: 'bg-error-50 text-error-700 border-error-500',
-    warning: 'bg-warning-50 text-warning-700 border-warning-500',
-    info: 'bg-primary-50 text-primary-700 border-primary-500',
+    success: 'bg-success-600/20 text-success-400 border-success-500/50',
+    error: 'bg-error-600/20 text-error-400 border-error-500/50',
+    warning: 'bg-warning-600/20 text-warning-400 border-warning-500/50',
+    info: 'bg-primary-600/20 text-primary-400 border-primary-500/50',
   };
 
   const icons: Record<AlertType, React.ReactNode> = {
@@ -25,7 +25,7 @@ const Alert: React.FC<AlertProps> = ({ type, message, onClose }) => {
   };
 
   return (
-    <div className={`rounded-md border-l-4 p-4 mb-4 ${typeClasses[type]}`}>
+    <div className={`rounded-lg border-l-4 p-4 mb-4 backdrop-blur-sm ${typeClasses[type]}`}>
       <div className="flex items-start">
         <div className="flex-shrink-0 mr-3">
           {icons[type]}
@@ -34,9 +34,9 @@ const Alert: React.FC<AlertProps> = ({ type, message, onClose }) => {
           <p className="text-sm">{message}</p>
         </div>
         {onClose && (
-          <button 
-            type="button" 
-            className="ml-auto -mr-1.5 inline-flex text-gray-400 hover:text-gray-600 focus:outline-none"
+          <button
+            type="button"
+            className="ml-auto -mr-1.5 inline-flex text-gray-400 hover:text-white focus:outline-none transition-colors"
             onClick={onClose}
           >
             <span className="sr-only">Close</span>
