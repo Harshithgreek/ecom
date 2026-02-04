@@ -208,7 +208,7 @@ This project is actively maintained. Check the [conversation history](https://gi
 **Harshith**
 - GitHub: [@Harshithgreek](https://github.com/Harshithgreek)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **face-api.js** - Face recognition technology
 - **React Team** - React framework
