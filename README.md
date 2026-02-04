@@ -203,10 +203,6 @@ The application features a modern, professional design with:
 
 This project is actively maintained. Check the [conversation history](https://github.com/Harshithgreek/ecom) for recent updates and fixes.
 
-## 📝 License
-
-This project is private and proprietary.
-
 ## 👨‍💻 Author
 
 **Harshith**
